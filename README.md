@@ -87,19 +87,12 @@ These settings can be found under the "Settings" tab in Web-UI and then under th
 
 https://github.com/BlafKing/sd-civitai-browser-plus/assets/9644716/44c5c7a0-4854-4043-bfbb-f32fa9df5a74
 
-
-# Star History 🌟
-
-<a href="https://star-history.com/#BlafKing/sd-civitai-browser-plus&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=BlafKing/sd-civitai-browser-plus&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=BlafKing/sd-civitai-browser-plus&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=BlafKing/sd-civitai-browser-plus&type=Date" />
-  </picture>
-</a>
-
 # Changelog 📋
 
+<h3>2025-08-10</h3>
+* Moved `civitai_subfolders.json` out of Auto1111/Forge `config_states` folder into extension script folder. May break custom settings, please move your json file into `sd-civitai-browser-plus/scripts/civitai_subfolders.json`
+
+---
 <h3>v3.6.0</h3>
 
 * Feature: Ability to set custom default sub folders.
