@@ -3,4 +3,4 @@ __pycache__
 running
 venv
 .mypy_cache
-/scripts/civitai_subfolders.json
+*civitai_subfolders.json
