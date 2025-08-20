@@ -1,4 +1,4 @@
-Error Leads To Extension Crash
+## Error Leads To Extension Crash
 ```
 CivitAI Browser+: Error: 500 Server Error: Internal Server Error for url: ValidUrl.example
 Traceback (most recent call last):
@@ -25,7 +25,7 @@ Traceback (most recent call last):
 TypeError: string indices must be integers
 ```
 
-Non-Breaking Error:
+### Non-Breaking Error:
 ```
 CivitAI Browser+: Error: 429 Client Error: Too Many Requests for url: https://civitai.com/api/v1/model-versions/2010249
 CivitAI Browser+: [Warning] Unexpected API response: error
@@ -51,7 +51,7 @@ Traceback (most recent call last):
 TypeError: string indices must be integers
 ```
 
-Cancel All Error:
+## Cancel All Error:
 ```
 Traceback (most recent call last):
   File ".../stable-diffusion-webui/venv/lib/python3.10/site-packages/gradio/routes.py", line 488, in run_predict
@@ -72,3 +72,6 @@ Traceback (most recent call last):
     if item:
 UnboundLocalError: local variable 'item' referenced before assignment
 ```
+
+#### Aria2 not rebinding after restart.
+It seems it is not being given enough time to shutdown. Unsure of how to troubleshoot or update to a newer version.

@@ -48,7 +48,7 @@ def contenttype_folder(content_type, desc=None, fromCheck=False, custom_folder=N
             folder = os.path.join(main_models, "Stable-diffusion")
 
     elif content_type == "Hypernetwork":
-        if cmd_opts.hypernetwork_dir and not custom_folder:
+        if getattr(cmd_opts, 'hypernetwork_dir', None) and not custom_folder:
             folder = cmd_opts.hypernetwork_dir
         else:
             folder = os.path.join(main_models, "hypernetworks")
