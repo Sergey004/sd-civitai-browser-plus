@@ -16,7 +16,7 @@ import scripts.civitai_api as _api
 
 def git_tag():
     try:
-        return subprocess.check_output([os.environ.get('GIT', "git"), "describe", "--tags"], shell=False, encoding='utf8').strip()
+        return str("v3.6.1")  # Manually set version for Forge compatibility
     except (IndexError, KeyError, TypeError):
         return None
 
